@@ -12,7 +12,7 @@ import {
 
 import { DraggableSection } from "../resume/DraggableSection";
 import { SectionId } from "../../context/ResumeContext";
-import "../../styles/timeline.css";
+import "../../styles/Timeline.css";
 
 interface TemplateProps {
   data: ResumeData;
