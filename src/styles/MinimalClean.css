@@ -1,0 +1,176 @@
+.mc-container {
+  max-width: 210mm;
+  min-height: 297mm;
+  margin: auto;
+  padding: 48px;
+  background: #ffffff;
+  color: #111827;
+  font-family: system-ui, sans-serif;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.mc-header {
+  border-bottom: 2px solid #111827;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.mc-header h1 {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.mc-role {
+  font-size: 20px;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.mc-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.mc-contacts div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Sections */
+.mc-section {
+  margin-bottom: 32px;
+}
+
+.mc-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* Summary */
+.mc-summary {
+  color: #374151;
+  line-height: 1.7;
+}
+
+/* Experience */
+.mc-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mc-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.mc-experience-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mc-experience-header span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.mc-company {
+  font-weight: 600;
+  color: #374151;
+  margin: 4px 0 8px;
+}
+
+.mc-description {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+/* Education */
+.mc-education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mc-degree {
+  color: #374151;
+}
+
+.mc-date {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Skills */
+.mc-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mc-skill {
+  background: #f3f4f6;
+  color: #1f2933;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Languages */
+.mc-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.mc-language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #374151;
+}
+
+/* Projects */
+.mc-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mc-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.mc-project-header a {
+  font-size: 12px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.mc-project-header a:hover {
+  text-decoration: underline;
+}
+
+/* Draggable padding */
+.mc-draggable {
+  padding-left: 32px;
+}

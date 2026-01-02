@@ -1,0 +1,144 @@
+/* ROOT */
+.ec-root {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 48px;
+  background: #ffffff;
+  color: #111827;
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
+/* HEADER */
+.ec-header {
+  text-align: center;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.ec-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.ec-header h2 {
+  font-size: 18px;
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+/* CONTACTS */
+.ec-contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: #4b5563;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTIONS */
+.ec-section {
+  margin-bottom: 32px;
+}
+
+.ec-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d1d5db;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+}
+
+/* TEXT */
+.ec-text {
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #1f2937;
+}
+
+/* LIST */
+.ec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* EXPERIENCE */
+.ec-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ec-exp-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ec-exp-header span {
+  font-size: 13px;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.ec-role {
+  font-weight: 700;
+  font-style: italic;
+  color: #374151;
+  margin: 6px 0 8px;
+}
+
+/* EDUCATION */
+.ec-edu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ec-edu-item span {
+  font-size: 13px;
+  color: #4b5563;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ec-italic {
+  font-style: italic;
+  color: #374151;
+}
+
+/* GRID (SKILLS / LANGUAGES) */
+.ec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 8px;
+}
+
+.ec-skill-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #d1d5db;
+  padding-bottom: 4px;
+}
+
+.ec-skill-item em {
+  font-size: 13px;
+  color: #4b5563;
+  font-style: italic;
+}
+
+/* PROJECTS */
+.ec-project {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}

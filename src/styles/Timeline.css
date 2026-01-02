@@ -1,0 +1,176 @@
+.timeline-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #1f2933;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  padding: 32px 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.timeline-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.timeline-header h2 {
+  font-size: 18px;
+  color: #2563eb;
+  margin-top: 4px;
+}
+
+.timeline-header p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #4b5563;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e5e7eb;
+  transform: translateX(-50%);
+}
+
+.timeline-section {
+  margin-bottom: 56px;
+}
+
+.timeline-title {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  gap: 8px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin: 0 auto 32px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  margin-bottom: 40px;
+}
+
+.timeline-item.left .timeline-content {
+  grid-column: 1;
+  text-align: right;
+}
+
+.timeline-item.right .timeline-content {
+  grid-column: 3;
+  text-align: left;
+}
+
+.timeline-marker {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: #2563eb;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+}
+
+.timeline-content {
+  font-size: 14px;
+}
+
+.timeline-heading {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.timeline-subtitle {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.timeline-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #6b7280;
+  margin: 4px 0 8px;
+}
+
+.timeline-text {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.project-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-card p {
+  font-size: 13px;
+  color: #4b5563;
+  margin-top: 4px;
+}
+
+.timeline-footer {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 32px;
+  margin-top: 32px;
+}
+
+.tag-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.tag {
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #374151;
+}

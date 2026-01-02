@@ -1,0 +1,16 @@
+import React from 'react';
+import { motion, HTMLMotionProps } from 'framer-motion';
+interface CardProps extends HTMLMotionProps<'div'> {
+  children: React.ReactNode;
+  noPadding?: boolean;
+}
+export function Card({
+  children,
+  className = '',
+  noPadding = false,
+  ...props
+}: CardProps) {
+  return <motion.div className={`bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden ${className}`} {...props}>
+      <div className={noPadding ? '' : 'p-6'}>{children}</div>
+    </motion.div>;
+}
