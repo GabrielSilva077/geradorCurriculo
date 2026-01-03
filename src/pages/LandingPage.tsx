@@ -1,10 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Button } from '../components/ui/Button';
-import { CheckCircle, FileText, Download, Zap, Layout, Star } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Button } from "../components/ui/Button";
+import "../styles/LandingPage.css"
+import {
+  CheckCircle,
+  FileText,
+  Download,
+  Zap,
+  Layout,
+  Star,
+} from "lucide-react";
 export function LandingPage() {
-  return <div className="min-h-screen bg-white">
+  return (
+    <div className="min-h-screen bg-white">
       {/* Navbar */}
       <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-md fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -27,41 +36,56 @@ export function LandingPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h1 initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          duration: 0.5
-        }} className="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-6">
-            Crie seu currículo profissional em{' '}
+          <motion.h1
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+            className="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-6"
+          >
+            Crie seu currículo profissional em{" "}
             <span className="text-blue-600">minutos</span>
           </motion.h1>
-          <motion.p initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          duration: 0.5,
-          delay: 0.1
-        }} className="text-xl text-gray-600 mb-8">
+          <motion.p
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.1,
+            }}
+            className="text-xl text-gray-600 mb-8"
+          >
             Escolha entre 10 modelos modernos, preencha seus dados e exporte em
             PDF. Focado em desenvolvedores e profissionais criativos.
           </motion.p>
-          <motion.div initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          duration: 0.5,
-          delay: 0.2
-        }} className="flex justify-center gap-4">
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.2,
+            }}
+            className="flex justify-center gap-4"
+          >
             <Link to="/templates">
               <Button size="lg" className="px-8 text-lg h-14">
                 Começar Agora
@@ -76,18 +100,27 @@ export function LandingPage() {
         </div>
 
         {/* Hero Image / Preview */}
-        <motion.div initial={{
-        opacity: 0,
-        y: 40
-      }} animate={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 0.7,
-        delay: 0.3
-      }} className="relative mx-auto max-w-5xl">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 40,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.7,
+            delay: 0.3,
+          }}
+          className="relative mx-auto max-w-5xl"
+        >
           <div className="bg-gray-100 rounded-2xl p-4 md:p-8 shadow-2xl border border-gray-200">
-            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Resume Builder Interface" className="rounded-lg shadow-sm w-full object-cover" />
+            <img
+              src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+              alt="Resume Builder Interface"
+              className="rounded-lg shadow-sm w-full object-cover"
+            />
             {/* Floating Badges */}
             <div className="absolute -right-4 top-20 bg-white p-4 rounded-xl shadow-lg border border-gray-100 hidden md:block animate-bounce-slow">
               <div className="flex items-center gap-3">
@@ -165,44 +198,6 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">
-            O que dizem os usuários
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[{
-            name: 'Mariana Costa',
-            role: 'UX Designer',
-            text: 'Consegui meu emprego atual graças ao modelo Criativo. Os recrutadores elogiaram muito o design!'
-          }, {
-            name: 'Pedro Santos',
-            role: 'Full Stack Developer',
-            text: 'O modelo Tech Developer é perfeito. Destaca exatamente o que importa: minhas skills e projetos no GitHub.'
-          }, {
-            name: 'Lucas Oliveira',
-            role: 'Gerente de Projetos',
-            text: 'Simples, rápido e o resultado final é muito profissional. Recomendo para todos os meus colegas.'
-          }].map((testimonial, i) => <div key={i} className="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                <div className="flex gap-1 text-yellow-400 mb-4">
-                  {[1, 2, 3, 4, 5].map(star => <Star key={star} size={16} fill="currentColor" />)}
-                </div>
-                <p className="text-gray-700 mb-4 italic">
-                  "{testimonial.text}"
-                </p>
-                <div>
-                  <div className="font-bold text-gray-900">
-                    {testimonial.name}
-                  </div>
-                  <div className="text-sm text-gray-500">
-                    {testimonial.role}
-                  </div>
-                </div>
-              </div>)}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Footer */}
       <section className="py-20 bg-blue-600 text-white text-center">
@@ -215,7 +210,10 @@ export function LandingPage() {
             e foque no conteúdo.
           </p>
           <Link to="/templates">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 border-none px-10 h-14 text-lg">
+            <Button
+              size="lg"
+              className="btnCriar"
+            >
               Criar Meu Currículo
             </Button>
           </Link>
@@ -227,5 +225,6 @@ export function LandingPage() {
           <p>© 2024 CurrículoPro. Todos os direitos reservados.</p>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 }
